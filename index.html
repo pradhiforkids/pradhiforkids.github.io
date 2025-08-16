@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRADHI - Kids Clothing</title>
+  <style>
+    body {
+      font-family:  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: red;
+    }
+
+    /* Header Banner */
+    header {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+      background-size: 300% 300%;
+      animation: rainbow 8s ease infinite;
+      text-align: center;
+      padding: 80px 20px;
+      color: #fff;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+       header h1 {
+      font-size: 65px;
+      margin: 0;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: #d6001c; /* Red like H&M */
+       }
+    
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+      .launching-soon {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d6001c;
+      margin-top: 15px;
+      text-transform: uppercase;
+    }
+
+    /* Collections grid */
+    .collections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .collection {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .collection:hover {
+      transform: translateY(-5px);
+    }
+
+    .collection img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .collection h2 {
+      margin: 15px 0 10px;
+      font-size: 22px;
+      color: #444;
+      text-align: center;
+    }
+
+    .collection p {
+      margin: 0 0 20px;
+      font-size: 16px;
+      color: #666;
+      text-align: center;
+      padding: 0 15px;
+    }
+
+     /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 30px;
+    }
+footer h3 {
+      margin-bottom: 15px;
+      font-size: 30px;
+      color: white;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>PRADHI</h1>
+    <p>Permium,Luxury & Stylish Clothing for Babies, Toddlers & Kids</p>
+      <div class="launching-soon">Launching Soon</div>
+  </header>
+
+  <!-- Collections Section -->
+  <section class="collections">
+    <!-- Babies -->
+    <div class="collection">
+      <h2>Babies Collection (6 - 12 months)</h2>
+      <p>Adorable, comfy, and safe clothing for your little ones.</p>
+    </div>
+    <!-- Toddlers -->
+    <div class="collection">
+      
+      <h2>Toddlers Collection</h2>
+      <p>Trendy and playful outfits for growing toddlers.</p>
+    </div>
+    <!-- Kids -->
+    <div class="collection">
+      
+      <h2>Kids Collection (6 - 14 years)</h2>
+      <p>Cool and stylish wear for kids of all ages.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Contact Us</h3>
+    <p>📞 +91-9322501177</p>
+    <p>✉️ pradhiforkids@gmail.com</p>
+    <p>📍 INDIA, MAHARASHTRA, PUNE</p>
+    <p>&copy; 2025 PRADHI. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
