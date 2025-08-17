@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - PRADHI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d6001c;
+    }
+
+    .cart-items {
+      max-width: 600px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .cart-items p {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .checkout-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      background: #d6001c;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .checkout-btn:hover {
+      background: #b00017;
+    }
+
+    /* Bottom nav (same as other pages) */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    .bottom-nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      position: relative;
+    }
+    #cart-count {
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+      position: absolute;
+      top: -10px;
+      right: -15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Cart</h1>
+
+  <div class="cart-items">
+    <p>Your cart is empty.</p>
+    <!-- Later we will dynamically load cart items here with JavaScript -->
+    <button class="checkout-btn">Proceed to Checkout</button>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="babies.html">Babies</a>
+    <a href="toddlers.html">Toddlers</a>
+    <a href="kids.html">Kids</a>
+    <a href="cart.html">Cart <span id="cart-count">0</span></a>
+  </div>
+
+  <script>
+    // Read cart count from localStorage (so it matches other pages)
+    let cartCount = localStorage.getItem("cartCount") || 0;
+    document.getElementById("cart-count").innerText = cartCount;
+  </script>
+</body>
+</html>
