@@ -5,25 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kids Collection - PRADHI</title>
   <style>
-    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: #fafafa; color: #333; text-align: center; }
-    header { background: #d6001c; color: #fff; padding: 20px; }
-    h1 { margin: 0; }
-    .age-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 40px; }
-    .age { background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 20px; transition: transform 0.3s; }
-    .age:hover { transform: scale(1.05); }
-    .age a { text-decoration: none; color: #d6001c; font-weight: bold; font-size: 18px; }
-    footer { background: #333; color: #fff; padding: 20px; margin-top: 30px; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #d6001c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+      color: #d6001c;
+    }
+    .product p {
+      margin: 0 0 10px;
+    }
+    .product button {
+      padding: 10px 20px;
+      background: #d6001c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .product button:hover {
+      background: #b00016;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
-  <header><h1>Kids Collection (6–14 Years)</h1></header>
-  <section class="age-groups">
-    <div class="age"><a href="#">6 Years</a></div>
-    <div class="age"><a href="#">8 Years</a></div>
-    <div class="age"><a href="#">10 Years</a></div>
-    <div class="age"><a href="#">12 Years</a></div>
-    <div class="age"><a href="#">14 Years</a></div>
+
+  <header>
+    <h1>PRADHI - Kids Collection</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="babies.html">Babies</a>
+    <a href="toddler.html">Toddlers</a>
+    <a href="kids.html">Kids</a>
+  </nav>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250" alt="Kids Shirt">
+      <h3>Kids Shirt</h3>
+      <p>₹799</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250" alt="Kids Jeans">
+      <h3>Kids Jeans</h3>
+      <p>₹1199</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250" alt="Kids Jacket">
+      <h3>Kids Jacket</h3>
+      <p>₹1499</p>
+      <button>Add to Cart</button>
+    </div>
   </section>
-  <footer><p>© 2025 PRADHI. All Rights Reserved.</p></footer>
+
+  <footer>
+    <p>📞 +91-9322501177 | ✉️ pradhiforkids@gmail.com | 📍 Pune, Maharashtra</p>
+    <p>&copy; 2025 PRADHI. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
