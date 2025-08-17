@@ -178,6 +178,16 @@
     <p>📍 INDIA, MAHARASHTRA, PUNE</p>
     <p>&copy; 2025 PRADHI. All Rights Reserved.</p>
   </footer>
+  <div id="bottomNavContainer"></div>
+
+<script>
+  // Load bottom-nav.html into every page
+  fetch("bottom-nav.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("bottomNavContainer").innerHTML = data;
+    });
+</script>
 
 </body>
 </html>
