@@ -1,21 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toddlers Collection</title>
+  <title>Toddlers Collection - PRADHI</title>
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
       background: #fafafa;
-      text-align: center;
+      color: #333;
     }
     header {
-      background: #ff9800;
-      color: #fff;
+      background: #d6001c;
+      color: white;
       padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .products {
       display: grid;
@@ -24,54 +40,83 @@
       padding: 30px;
     }
     .product {
-      background: #fff;
+      background: white;
       border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
     }
     .product img {
-      max-width: 100%;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
       border-radius: 10px;
     }
+    .product h3 {
+      margin: 10px 0 5px;
+      color: #d6001c;
+    }
+    .product p {
+      margin: 0 0 10px;
+    }
+    .product button {
+      padding: 10px 20px;
+      background: #d6001c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .product button:hover {
+      background: #b00016;
+    }
     footer {
-      margin-top: 30px;
-      padding: 20px;
       background: #333;
       color: #fff;
-    }
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Toddlers Collection (1–5 years)</h1>
+    <h1>PRADHI - Toddlers Collection</h1>
   </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="babies.html">Babies</a>
+    <a href="toddler.html">Toddlers</a>
+    <a href="kids.html">Kids</a>
+  </nav>
 
   <section class="products">
     <div class="product">
-      <img src="https://via.placeholder.com/250x250.png?text=Toddler+Shirt" alt="Toddler Shirt">
-      <h3>Toddler Shirt</h3>
-      <p>Trendy cotton shirt for toddlers.</p>
+      <img src="https://via.placeholder.com/300x250" alt="Toddler T-shirt">
+      <h3>Toddler T-shirt</h3>
+      <p>₹499</p>
+      <button>Add to Cart</button>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/250x250.png?text=Toddler+Jeans" alt="Toddler Jeans">
-      <h3>Toddler Jeans</h3>
-      <p>Comfortable stretchable jeans.</p>
+      <img src="https://via.placeholder.com/300x250" alt="Toddler Shorts">
+      <h3>Toddler Shorts</h3>
+      <p>₹699</p>
+      <button>Add to Cart</button>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/250x250.png?text=Toddler+Jacket" alt="Toddler Jacket">
-      <h3>Toddler Jacket</h3>
-      <p>Warm & stylish jacket for toddlers.</p>
+      <img src="https://via.placeholder.com/300x250" alt="Toddler Dress">
+      <h3>Toddler Dress</h3>
+      <p>₹999</p>
+      <button>Add to Cart</button>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 PRADHI. All Rights Reserved.</p>
-    <a href="index.html">⬅ Back to Home</a>
+    <p>📞 +91-9322501177 | ✉️ pradhiforkids@gmail.com | 📍 Pune, Maharashtra</p>
+    <p>&copy; 2025 PRADHI. All Rights Reserved.</p>
   </footer>
 
 </body>
