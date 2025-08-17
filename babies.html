@@ -35,6 +35,44 @@
 
     header {
       text-align: center;
+      padding: 50px 20px;…
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babies Collection - PRADHI</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: #d6001c;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
       padding: 50px 20px;
       background: linear-gradient(135deg, #ff9a9e, #fad0c4);
       color: #d6001c;
@@ -95,53 +133,17 @@
       padding: 20px;
       margin-top: 30px;
     }
-    <div class="bottom-nav">
-  <a href="index.html">Home</a>
-  <a href="Babies.html">Babies</a>
-  <a href="toddlers.html">Toddlers</a>
-  <a href="kids.html">Kids</a>
-  <a href="cart.html">Cart <span id="cart-count">0</span></a>
-</div>
-
-<style>
-  .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border-top: 1px solid #ddd;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    z-index: 1000;
-  }
-  .bottom-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    position: relative;
-  }
-  #cart-count {
-    background: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-    position: absolute;
-    top: -10px;
-    right: -15px;
-  }
-</style>
+  </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  nav>
+  <nav>
     <a href="index.html">Home</a>
     <a href="babies.html">Babies</a>
-    <a href="toddler.html">Toddlers</a>
+    <a href="toddlers.html">Toddlers</a>
     <a href="kids.html">Kids</a>
+    <a href="cart.html">Cart <span id="cart-count">0</span></a>
   </nav>
 
   <!-- Header -->
@@ -178,17 +180,6 @@
     <p>📍 INDIA, MAHARASHTRA, PUNE</p>
     <p>&copy; 2025 PRADHI. All Rights Reserved.</p>
   </footer>
-  <div id="bottomNavContainer"></div>
 
-<div id="bottomNavContainer"></div>
-
-<script>
-  // Load bottom-nav.html into every page
-  fetch("bottom-nav.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("bottomNavContainer").innerHTML = data;
-    });
-</script>
 </body>
 </html>
