@@ -6,12 +6,30 @@
   <title>PRADHI - Kids Clothing</title>
   <style>
     body {
-      font-family:  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
       background: #fafafa;
       color: red;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: #d6001c;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     /* Header Banner */
@@ -30,19 +48,20 @@
       100% { background-position: 0% 50%; }
     }
 
-       header h1 {
+    header h1 {
       font-size: 65px;
       margin: 0;
       font-weight: bold;
       letter-spacing: 3px;
       color: #d6001c; /* Red like H&M */
-       }
-    
+    }
+
     header p {
       font-size: 20px;
       margin-top: 10px;
     }
-      .launching-soon {
+
+    .launching-soon {
       font-size: 28px;
       font-weight: bold;
       color: #d6001c;
@@ -93,7 +112,7 @@
       padding: 0 15px;
     }
 
-     /* Footer */
+    /* Footer */
     footer {
       background: #333;
       color: #fff;
@@ -101,7 +120,8 @@
       padding: 30px 20px;
       margin-top: 30px;
     }
-footer h3 {
+
+    footer h3 {
       margin-bottom: 15px;
       font-size: 30px;
       color: white;
@@ -115,37 +135,36 @@ footer h3 {
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="babies.html">Babies</a>
+    <a href="toddler.html">Toddlers</a>
+    <a href="kids.html">Kids</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <!-- Header -->
   <header>
     <h1>PRADHI</h1>
-    <p>Permium,Luxury & Stylish Clothing for Babies, Toddlers & Kids</p>
-      <div class="launching-soon">Launching Soon</div>
+    <p>Premium, Luxury & Stylish Clothing for Babies, Toddlers & Kids</p>
+    <div class="launching-soon">Launching Soon</div>
   </header>
 
   <!-- Collections Section -->
   <section class="collections">
-    <!-- Babies -->
-<div class="collection">
-  <a href="Babies.html">
-    <h2>Babies Collection (6 - 12 months)</h2>
-    <p>Adorable, comfy, and safe clothing for your little ones.</p>
-  </a>
-</div>
-
-<!-- Toddlers -->
-<div class="collection">
-  <a href="Toddlers.html">
-    <h2>Toddlers Collection</h2>
-    <p>Trendy and playful outfits for growing toddlers.</p>
-  </a>
-</div>
-   <!-- Kids -->
-<div class="collection">
-  <a href="kids.html" style="text-decoration: none; color: inherit;">
-    <h2>Kids Collection (6 - 14 years)</h2>
-    <p>Cool and stylish wear for kids of all ages.</p>
-  </a>
-</div>
+    <div class="collection">
+      <h2>Babies Collection (6 - 12 months)</h2>
+      <p>Adorable, comfy, and safe clothing for your little ones.</p>
+    </div>
+    <div class="collection">
+      <h2>Toddlers Collection</h2>
+      <p>Trendy and playful outfits for growing toddlers.</p>
+    </div>
+    <div class="collection">
+      <h2>Kids Collection (6 - 14 years)</h2>
+      <p>Cool and stylish wear for kids of all ages.</p>
+    </div>
   </section>
 
   <!-- Footer -->
